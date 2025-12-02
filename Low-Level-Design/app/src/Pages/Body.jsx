@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import MemeCard from "./MemeCard";
-import Shimmer from "./Shimmer";
+import MemeCard from "../Components/MemeCard";
+import Shimmer from "../Components/Shimmer";
 import useMemes from "../Hooks/useMemes";
 
 const Body = () => {

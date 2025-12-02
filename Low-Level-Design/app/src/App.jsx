@@ -1,9 +1,10 @@
-import About from "./Components/About";
-import Body from "./Components/Body";
+import About from "./Pages/About";
+import Body from "./Pages/Body";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Team from "./Components/Team";
-import Login from "./Components/Login";
+import Team from "./Pages/Team";
+import Login from "./Pages/Login";
 import ProtectedRoute from "./Components/ProtectedRoute";
+import Accordion from "./Pages/Accordion";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
               <a href="/team">Team</a>
             </li>
             <li>
+              <a href="/accordion">Accordion</a>
+            </li>
+            <li>
               <a href="/login">Login</a>
             </li>
           </ul>
@@ -36,6 +40,7 @@ function App() {
             <Route path="/about" element={<About />}></Route>
           </Route>
           <Route path="/team" element={<Team />}></Route>
+          <Route path="/accordion" element={<Accordion />}></Route>
           <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
