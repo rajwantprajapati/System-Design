@@ -5,6 +5,7 @@ import Team from "./Pages/Team";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import Accordion from "./Pages/Accordion";
+import NestedComments from "./Pages/NestedComments";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
               <a href="/accordion">Accordion</a>
             </li>
             <li>
+              <a href="/nested-comments">Nested Comments</a>
+            </li>
+            <li>
               <a href="/login">Login</a>
             </li>
           </ul>
@@ -41,6 +45,7 @@ function App() {
           </Route>
           <Route path="/team" element={<Team />}></Route>
           <Route path="/accordion" element={<Accordion />}></Route>
+          <Route path="/nested-comments" element={<NestedComments />}></Route>
           <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
