@@ -7,6 +7,7 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 import Accordion from "./Pages/Accordion";
 import NestedComments from "./Pages/NestedComments";
 import ImageSlider from "./Pages/ImageSlider";
+import Pagination from "./Pages/Pagination";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
               <a href="/image-slider">Image Slider</a>
             </li>
             <li>
+              <a href="/pagination">Pagination</a>
+            </li>
+            <li>
               <a href="/login">Login</a>
             </li>
           </ul>
@@ -51,6 +55,7 @@ function App() {
           <Route path="/accordion" element={<Accordion />}></Route>
           <Route path="/nested-comments" element={<NestedComments />}></Route>
           <Route path="/image-slider" element={<ImageSlider />}></Route>
+          <Route path="/pagination" element={<Pagination />}></Route>
           <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
