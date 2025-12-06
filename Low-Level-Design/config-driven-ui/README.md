@@ -23,3 +23,5 @@ A config-driven UI architecture decouples the user interface definition from the
 - Instantly updates UI when configuration changes, without code changes or redeployment.
 
 This pattern is especially useful for admin panels, form builders, dashboards, and applications requiring frequent UI updates driven by business requirements.
+
+<img width="803" height="2198" alt="image" src="https://github.com/user-attachments/assets/a30c9ce8-1108-42a2-aa16-7014cbe4c132" />
