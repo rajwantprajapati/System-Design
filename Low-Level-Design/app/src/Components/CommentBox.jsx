@@ -5,9 +5,9 @@ const CommentBox = ({ comments }) => {
     <div className="ml-4">
       <div className="flex flex-col gap-3">
         {comments.map((comment) => {
-          const { author, comment: replyComment, replies } = comment;
+          const { author, comment: replyComment, replies, id } = comment;
           return (
-            <div className="border-l">
+            <div className="border-l" key={id}>
               <div className="flex flex-row gap-2 pl-2">
                 <img
                   className="w-6 h-6 rounded-full mt-1"
@@ -20,7 +20,7 @@ const CommentBox = ({ comments }) => {
                   <p>{replyComment}</p>
                   <p className="flex items-center gap-2 pb-1">
                     <MessageCircleMore size="16" />
-                    <p className="italic">{replies.length} replies</p>
+                    <span className="italic">{replies.length} replies</span>
                   </p>
                 </div>
               </div>

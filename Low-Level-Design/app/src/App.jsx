@@ -1,13 +1,13 @@
-import About from "./Pages/About";
-import Body from "./Pages/Body";
+import About from "./Pages/About/About";
+import Body from "./Pages/Home/Body";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Team from "./Pages/Team";
-import Login from "./Pages/Login";
+import Team from "./Pages/Team/Team";
+import Login from "./Pages/Login/Login";
 import ProtectedRoute from "./Components/ProtectedRoute";
-import Accordion from "./Pages/Accordion";
-import NestedComments from "./Pages/NestedComments";
-import ImageSlider from "./Pages/ImageSlider";
-import Pagination from "./Pages/Pagination";
+import Accordion from "./Pages/Accordion/Accordion";
+import NestedComments from "./Pages/NestedComments/NestedComments";
+import ImageSlider from "./Pages/ImageSlider/ImageSlider";
+import Pagination from "./Pages/Pagination/Pagination";
 
 function App() {
   return (

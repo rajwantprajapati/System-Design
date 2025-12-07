@@ -1,4 +1,4 @@
-import CommentBox from "../Components/CommentBox";
+import CommentBox from "../../Components/CommentBox";
 
 const COMMENTS = [
   {

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useFetch } from "../Hooks/useFetch";
-import ProductCard from "../Components/ProductCard";
+import { useFetch } from "../../Hooks/useFetch";
+import ProductCard from "../../Components/ProductCard";
 const LIMIT = 20;
 
 const Pagination = () => {
