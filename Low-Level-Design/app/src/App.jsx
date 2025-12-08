@@ -8,11 +8,12 @@ import Accordion from "./Pages/Accordion/Accordion";
 import NestedComments from "./Pages/NestedComments/NestedComments";
 import ImageSlider from "./Pages/ImageSlider/ImageSlider";
 import Pagination from "./Pages/Pagination/Pagination";
+import LiveChat from "./Pages/LiveChat/LiveChat";
 
 function App() {
   return (
     <>
-      <header className=" bg-black text-white mb-4 p-4 flex justify-between">
+      <header className=" bg-black text-white p-4 flex justify-between">
         <p className="font-bold">Wholesome Memes</p>
 
         <nav>
@@ -39,6 +40,9 @@ function App() {
               <a href="/pagination">Pagination</a>
             </li>
             <li>
+              <a href="/live-chat">Live Chat</a>
+            </li>
+            <li>
               <a href="/login">Login</a>
             </li>
           </ul>
@@ -56,6 +60,7 @@ function App() {
           <Route path="/nested-comments" element={<NestedComments />}></Route>
           <Route path="/image-slider" element={<ImageSlider />}></Route>
           <Route path="/pagination" element={<Pagination />}></Route>
+          <Route path="/live-chat" element={<LiveChat />}></Route>
           <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
