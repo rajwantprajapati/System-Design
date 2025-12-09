@@ -9,6 +9,7 @@ import NestedComments from "./Pages/NestedComments/NestedComments";
 import ImageSlider from "./Pages/ImageSlider/ImageSlider";
 import Pagination from "./Pages/Pagination/Pagination";
 import LiveChat from "./Pages/LiveChat/LiveChat";
+import Search from "./Pages/Search/Search";
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
               <a href="/live-chat">Live Chat</a>
             </li>
             <li>
+              <a href="/search">Search</a>
+            </li>
+            <li>
               <a href="/login">Login</a>
             </li>
           </ul>
@@ -61,6 +65,7 @@ function App() {
           <Route path="/image-slider" element={<ImageSlider />}></Route>
           <Route path="/pagination" element={<Pagination />}></Route>
           <Route path="/live-chat" element={<LiveChat />}></Route>
+          <Route path="/search" element={<Search />}></Route>
           <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
