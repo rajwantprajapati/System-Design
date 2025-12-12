@@ -10,6 +10,7 @@ import ImageSlider from "./Pages/ImageSlider/ImageSlider";
 import Pagination from "./Pages/Pagination/Pagination";
 import LiveChat from "./Pages/LiveChat/LiveChat";
 import Search from "./Pages/Search/Search";
+import CachedSearch from "./Pages/Search/CachedSearch";
 
 function App() {
   return (
@@ -65,7 +66,8 @@ function App() {
           <Route path="/image-slider" element={<ImageSlider />}></Route>
           <Route path="/pagination" element={<Pagination />}></Route>
           <Route path="/live-chat" element={<LiveChat />}></Route>
-          <Route path="/search" element={<Search />}></Route>
+          {/* <Route path="/search" element={<Search />}></Route>*/}
+          <Route path="/search" element={<CachedSearch />}></Route>
           <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
