@@ -20,7 +20,7 @@ const Accordion = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <div className="m-4">
+    <div className="m-4 pt-20">
       <h1 className="font-bold mb-4 ">Accordion Example</h1>
 
       {ACCORDION_LIST.map(({ title, content }, index) => (

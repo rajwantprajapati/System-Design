@@ -32,7 +32,7 @@ const ImageSlider = () => {
   }, []);
 
   return (
-    <div className="ml-4">
+    <div className="ml-4 pt-20">
       <h1 className="text-2xl font-bold mb-6">Image Slider Example</h1>
 
       <div className="flex justify-center items-center">

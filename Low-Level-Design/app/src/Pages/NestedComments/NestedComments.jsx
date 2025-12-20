@@ -77,7 +77,7 @@ const COMMENTS = [
 
 const NestedComments = () => {
   return (
-    <div>
+    <div className="pt-20">
       <h1 className="font-bold text-2xl mb-4">Nested Comments</h1>
 
       <CommentBox comments={COMMENTS} />

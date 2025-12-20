@@ -25,7 +25,7 @@ const Body = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap pt-20">
       {memes?.map((meme, index) => (
         <MemeCard key={`${index}-${meme.title}`} meme={meme} />
       ))}

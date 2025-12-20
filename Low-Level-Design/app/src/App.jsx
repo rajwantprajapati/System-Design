@@ -1,4 +1,4 @@
-import About from "./Pages/About/About";
+import Examples from "./Pages/Examples/Examples";
 import Body from "./Pages/Home/Body";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Team from "./Pages/Team/Team";
@@ -11,11 +11,14 @@ import Pagination from "./Pages/Pagination/Pagination";
 import LiveChat from "./Pages/LiveChat/LiveChat";
 import Search from "./Pages/Search/Search";
 import CachedSearch from "./Pages/Search/CachedSearch";
+import AdvanceCarouselExp from "./Pages/Examples/Components/AdvanceCarouselExp";
+import Draggable from "./Pages/Examples/Components/Draggable";
+import StarRating from "./Pages/Examples/Components/StarRating";
 
 function App() {
   return (
-    <>
-      <header className=" bg-black text-white p-4 flex justify-between">
+    <div className="relative">
+      <header className=" bg-black text-white top-0 p-4 flex justify-between fixed z-50 w-full">
         <p className="font-bold">Wholesome Memes</p>
 
         <nav>
@@ -24,7 +27,7 @@ function App() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/examples">Examples</a>
             </li>
             <li>
               <a href="/team">Team</a>
@@ -58,7 +61,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Body />}></Route>
           <Route element={<ProtectedRoute />}>
-            <Route path="/about" element={<About />}></Route>
+            <Route path="/examples" element={<Examples />}>
+              <Route path="carousel" element={<AdvanceCarouselExp />}></Route>
+              <Route path="draggable" element={<Draggable />}></Route>
+              <Route path="star-rating" element={<StarRating />}></Route>
+            </Route>
           </Route>
           <Route path="/team" element={<Team />}></Route>
           <Route path="/accordion" element={<Accordion />}></Route>
@@ -71,7 +78,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

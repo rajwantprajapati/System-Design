@@ -3,7 +3,7 @@ import VideoStream from "./Components/VideoStream";
 
 const LiveChat = () => {
   return (
-    <div className="h-screen max-h-screen flex gap-2 bg-black text-white">
+    <div className="h-screen max-h-screen flex gap-2 bg-black text-white pt-20">
       <div className="w-full">
         <VideoStream />
       </div>

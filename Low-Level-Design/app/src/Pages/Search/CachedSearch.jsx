@@ -37,7 +37,7 @@ const CachedSearch = () => {
   const showSearchResults = data && data[1]?.length > 1 && isInputFocused;
 
   return (
-    <div className="m-4">
+    <div className="m-4 pt-20">
       <h1 className="text-lg font-bold mb-2">Auto Complete and Search</h1>
       <div className="flex flex-col w-96">
         <input
